@@ -1,0 +1,19 @@
+Quesion:-1
+https://www.codingninjas.com/codestudio/problems/find-duplicate-in-array_1112602?topList=striver-sde-sheet-problems
+
+def findDuplicate(arr:list, n:int):
+    # Write your code here.
+    ans=[]
+    arr.sort()
+    for i in range(0,len(arr)-1):
+        if arr[i]==arr[i+1]:
+            return arr[i]
+
+Time Complexity
+O(N * log(N)), where N is the length of the array.
+
+The sorting of elements costs O(N * log(N)) time, which dominates the subsequent linear scan.
+
+Space Complexity
+O(1) or O(N),
+
